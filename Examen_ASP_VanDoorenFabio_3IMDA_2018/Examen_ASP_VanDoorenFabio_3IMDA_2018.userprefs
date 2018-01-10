@@ -1,0 +1,49 @@
+﻿<Properties StartupConfiguration="{00CFADEA-341C-4148-90F6-3DC69C8DD8BD}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Examen_ASP_VanDoorenFabio_3IMDA_2018/Views/Shared/_Layout.cshtml">
+    <Files>
+      <File FileName="Examen_ASP_VanDoorenFabio_3IMDA_2018/Controllers/HomeController.cs" Line="95" Column="18" />
+      <File FileName="Examen_ASP_VanDoorenFabio_3IMDA_2018/Controllers/BrandController.cs" Line="92" Column="43" />
+      <File FileName="Examen_ASP_VanDoorenFabio_3IMDA_2018/Controllers/OwnerController.cs" Line="8" Column="43" />
+      <File FileName="Examen_ASP_VanDoorenFabio_3IMDA_2018/Models/BrandDetailViewModel.cs" Line="5" Column="47" />
+      <File FileName="Examen_ASP_VanDoorenFabio_3IMDA_2018/Database/DatabaseInitializer.cs" Line="25" Column="85" />
+      <File FileName="Examen_ASP_VanDoorenFabio_3IMDA_2018/Database/EntityContext.cs" Line="23" Column="37" />
+      <File FileName="Examen_ASP_VanDoorenFabio_3IMDA_2018/Entities/Car.cs" Line="13" Column="38" />
+      <File FileName="Examen_ASP_VanDoorenFabio_3IMDA_2018/Entities/CarOwner.cs" Line="4" Column="47" />
+      <File FileName="Examen_ASP_VanDoorenFabio_3IMDA_2018/Entities/Owner.cs" Line="4" Column="47" />
+      <File FileName="Examen_ASP_VanDoorenFabio_3IMDA_2018/Entities/CarType.cs" Line="6" Column="25" />
+      <File FileName="Examen_ASP_VanDoorenFabio_3IMDA_2018/Models/BrandEditViewModel.cs" Line="4" Column="43" />
+      <File FileName="Examen_ASP_VanDoorenFabio_3IMDA_2018/Models/BrandListViewModel.cs" Line="3" Column="43" />
+      <File FileName="Examen_ASP_VanDoorenFabio_3IMDA_2018/Models/CarDetailViewModel.cs" Line="11" Column="38" />
+      <File FileName="Examen_ASP_VanDoorenFabio_3IMDA_2018/Models/CarEditViewModel.cs" Line="14" Column="38" />
+      <File FileName="Examen_ASP_VanDoorenFabio_3IMDA_2018/Models/CarListViewModel.cs" Line="3" Column="43" />
+      <File FileName="Examen_ASP_VanDoorenFabio_3IMDA_2018/Models/ErrorViewModel.cs" Line="1" Column="1" />
+      <File FileName="Examen_ASP_VanDoorenFabio_3IMDA_2018/Models/OwnerDetailViewModel.cs" Line="3" Column="43" />
+      <File FileName="Examen_ASP_VanDoorenFabio_3IMDA_2018/Models/OwnerEditViewModel.cs" Line="4" Column="43" />
+      <File FileName="Examen_ASP_VanDoorenFabio_3IMDA_2018/Models/OwnerListViewModel.cs" Line="5" Column="47" />
+      <File FileName="Examen_ASP_VanDoorenFabio_3IMDA_2018/Services/BrandService.cs" Line="57" Column="34" />
+      <File FileName="Examen_ASP_VanDoorenFabio_3IMDA_2018/Services/CarService.cs" Line="62" Column="43" />
+      <File FileName="Examen_ASP_VanDoorenFabio_3IMDA_2018/Services/IBrandService.cs" Line="9" Column="23" />
+      <File FileName="Examen_ASP_VanDoorenFabio_3IMDA_2018/Services/ICarService.cs" Line="9" Column="22" />
+      <File FileName="Examen_ASP_VanDoorenFabio_3IMDA_2018/Services/IOwnerService.cs" Line="2" Column="43" />
+      <File FileName="Examen_ASP_VanDoorenFabio_3IMDA_2018/Services/OwnerService.cs" Line="3" Column="43" />
+      <File FileName="Examen_ASP_VanDoorenFabio_3IMDA_2018/Views/Brand/Brands.cshtml" Line="59" Column="74" />
+      <File FileName="Examen_ASP_VanDoorenFabio_3IMDA_2018/Views/Shared/_Layout.cshtml" Line="10" Column="56" />
+      <File FileName="Examen_ASP_VanDoorenFabio_3IMDA_2018/Startup.cs" Line="9" Column="43" />
+      <File FileName="Examen_ASP_VanDoorenFabio_3IMDA_2018/Views/Home/Index.cshtml" Line="53" Column="66" />
+      <File FileName="Examen_ASP_VanDoorenFabio_3IMDA_2018/Program.cs" Line="1" Column="1" />
+      <File FileName="Examen_ASP_VanDoorenFabio_3IMDA_2018/Views/Owner/Edit.cshtml" Line="1" Column="1" />
+      <File FileName="Examen_ASP_VanDoorenFabio_3IMDA_2018/Views/Owner/Owners.cshtml" Line="39" Column="67" />
+      <File FileName="Examen_ASP_VanDoorenFabio_3IMDA_2018/Views/Brand/Edit.cshtml" Line="29" Column="19" />
+      <File FileName="Examen_ASP_VanDoorenFabio_3IMDA_2018/Views/Home/Edit.cshtml" Line="13" Column="26" />
+      <File FileName="Examen_ASP_VanDoorenFabio_3IMDA_2018/Views/_ViewImports.cshtml" Line="1" Column="1" />
+      <File FileName="Examen_ASP_VanDoorenFabio_3IMDA_2018/Views/_ViewStart.cshtml" Line="1" Column="1" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.ItemProperties.Examen__ASP__VanDoorenFabio__3IMDA__2018 PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MultiItemStartupConfigurations />
+</Properties>

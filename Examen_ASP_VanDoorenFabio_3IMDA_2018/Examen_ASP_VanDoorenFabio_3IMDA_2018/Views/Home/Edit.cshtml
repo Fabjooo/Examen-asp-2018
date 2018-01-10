@@ -1,0 +1,69 @@
+﻿@model CarEditViewModel
+
+@{
+    ViewData["Title"] = string.IsNullOrEmpty(Model.LicensePlate) ? "Add New Car" : "Changing the info for: " + Model.LicensePlate;
+}
+
+<h2>@ViewData["Title"]</h2>
+<h3>@ViewData["Message"]</h3>
+
+
+<div class="row">
+    <form asp-action="Save" asp-controller="Home">
+        <div class="row" style="padding-bottom: 10px">
+            <div class="col-lg-2">
+                <label asp-for="LicensePlate">License plate:</label>
+            </div>
+            <div class="col-lg-10">
+                <input asp-for="LicensePlate"/>
+                <span asp-validation-for="LicensePlate" style="color: red"></span>
+            </div>
+        </div>
+
+        <div class="row" style="padding-bottom: 10px">
+            <div class="col-lg-2">
+                <label asp-for="DatePurchased">Date purchased:</label>
+            </div>
+            <div class="col-lg-10">
+                <input asp-for="DatePurchased"/>
+                <span asp-validation-for="DatePurchased" style="color: red"></span>
+            </div>
+        </div>
+
+        <div class="row" style="padding-bottom: 10px">
+            <div class="col-lg-2">
+                <label asp-for="OwnerId">Owner:</label>
+            </div>
+            <div class="col-lg-10">
+                <select asp-for="OwnerId" asp-items="Model.Owners"></select>
+                <span asp-validation-for="OwnerId" style="color: red"></span>
+            </div>
+        </div>
+        
+        <div class="row" style="padding-bottom: 10px">
+            <div class="col-lg-2">
+                <label asp-for="CarTypeId">Model:</label>
+            </div>
+            <div class="col-lg-10">
+                <select asp-for="CarTypeId" asp-items="Model.CarTypes"></select>
+                <span asp-validation-for="CarTypeId" style="color: red"></span>
+            </div>
+        </div>
+
+        <div class="row" style="padding-bottom: 10px">
+            <div class="col-lg-2">
+                <label asp-for="Color">Color:</label>
+            </div>
+            <div class="col-lg-10">
+                <input asp-for="Color"/>
+                <span asp-validation-for="Color" style="color: red"></span>
+            </div>
+        </div>
+        
+        <div asp-validation-summary="All"></div>
+
+        <input type="hidden" asp-for="Id"/>
+        <input type="submit"/>
+    </form>
+   
+</div>

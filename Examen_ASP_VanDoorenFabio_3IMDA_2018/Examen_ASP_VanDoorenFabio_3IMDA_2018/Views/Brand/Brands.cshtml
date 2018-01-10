@@ -1,0 +1,79 @@
+﻿@model BrandListViewModel
+
+@{
+    ViewData["Title"] = "Brands";
+}
+<h2>All @ViewData["Title"]</h2>
+<h3>@ViewData["Message"]</h3>
+
+<a asp-controller="Brand" asp-action="New" class="btn btn-primary">Add New Brand</a>
+<a asp-controller="Home" asp-action="New" class="btn btn-primary">Add New Car</a>
+
+<div class="row">
+    <div class="col-md-12">
+        <table style="margin-top: 2em;" class="table">
+            <thead style="color: white; background-color: #333; font-weight: bold">
+            <tr>
+                <td>&#35;</td>
+                <td>Model</td>
+                <td>Brand</td>
+                <td>Edit</td>
+                <td>Delete</td>
+            </tr>
+            </thead>
+            @foreach (var cartype in Model.Brands)
+            {
+                <tr style="background-color: #e6e6e6; font-weight: bold;">
+                    <td>@cartype.Id</td>
+                    <td>@cartype.Model</td>
+                    <td>@cartype.Brand</td>
+                   
+                    <td>
+                        <a asp-controller="Brand" asp-action="Detail" asp-route-id="@cartype.Id">
+                            <i class="glyphicon glyphicon-pencil"></i>
+                        </a>
+                    </td>
+                    <td>
+                        <a asp-controller="Brand" asp-action="Delete" asp-route-id="@cartype.Id"
+                           onclick="$.post(this.href).success(window.location.href = '/Brand/Brands');return false; ">
+                            <i class="glyphicon glyphicon-remove"></i>
+                        </a>
+                    </td>
+                </tr>
+            
+                if (cartype.CarsByBrand.Count != 0) {
+                        <tr style="background-color: #f7f7f7;">
+                            <td>&nbsp;</td>
+                            <td>Owner</td>
+                            <td>License Plate</td>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                        </tr>
+                    foreach (var car in cartype.CarsByBrand)
+                    {
+                        <tr>
+                            <td>&nbsp;</td>
+                            <td>@string.Join(";", car.Owner.Select(x => x.Owner.FirstName + " " + x.Owner.LastName))</td>
+                            <td>@car.LicensePlate</td>
+                            <td>
+                                <a asp-controller="Home" asp-action="Edit" asp-route-id="@car.Id">
+                                    <i class="glyphicon glyphicon-pencil"></i>
+                                </a>
+                            </td>
+                            <td>
+                                <a asp-controller="Home" asp-action="Delete" asp-route-id="@car.Id"
+                                   onclick="$.post(this.href).success(window.location.href = '/Brand/Brands');return false; ">
+                                    <i class="glyphicon glyphicon-remove"></i>
+                                </a>
+                            </td>
+                        </tr>
+
+                    }
+                }
+                
+            }
+        </table>
+
+    </div>
+   
+</div>
