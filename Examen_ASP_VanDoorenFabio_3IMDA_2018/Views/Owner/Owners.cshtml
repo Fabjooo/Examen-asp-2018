@@ -37,13 +37,13 @@
                     <td>&nbsp;</td>
                     <td>
                         <a asp-controller="Owner" asp-action="Edit" asp-route-id="@owner.Id">
-                            <i class="glyphicon glyphicon-pencil"></i>
+                            <i>&#x1F527;</i>
                         </a>
                     </td>
                     <td>
                         <a asp-controller="Owner" asp-action="Delete" asp-route-id="@owner.Id"
                            onclick="$.post(this.href).success(window.location.href = '/Owner/Owners');return false; ">
-                            <i class="glyphicon glyphicon-remove"></i>
+                            <i>&#x274C;</i> <!-- RED CROSS -->
                         </a>
                     </td>
                 </tr>
@@ -65,13 +65,13 @@
                             <td>@car.LicensePlate</td>
                             <td>
                                 <a asp-controller="Home" asp-action="Detail" asp-route-id="@car.Id">
-                                    <i class="glyphicon glyphicon-pencil"></i>
+                                    <i>&#x1F527;</i> <!-- WRENCH -->
                                 </a>
                             </td>
                             <td>
                                 <a asp-controller="Home" asp-action="Delete" asp-route-id="@car.Id"
                                    onclick="$.post(this.href).success(window.location.href = '/Owner/Owners');return false; ">
-                                    <i class="glyphicon glyphicon-remove"></i>
+                                    <i>&#x274C;</i> <!-- RED CROSS -->
                                 </a>
                             </td>
                         </tr>
